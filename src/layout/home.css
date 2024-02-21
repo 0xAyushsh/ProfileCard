@@ -1,0 +1,22 @@
+.home-section {
+	display: grid;
+	/* flex-direction: row;
+	flex-wrap: wrap; */
+	grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+	.home-section {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.home-section {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+.home-section > * {
+	flex: 1;
+}
